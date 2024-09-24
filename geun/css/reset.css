@@ -206,4 +206,4 @@ table {
 .width_10n {width:10% !important;}
 
 a{display:inline-block;text-decoration: none;color:inherit;cursor:pointer;}
-div, p, span{cursor:inherit;user-select: none;}
+/* div, p, span{cursor:inherit;user-select: none;} */
