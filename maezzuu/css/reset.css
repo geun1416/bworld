@@ -59,7 +59,9 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+.blind {
+	display: none;
+}
 /*margin*/
 .m-0{margin:0px !important;}
 .m-10{margin:10px !important;}
