@@ -13,134 +13,52 @@
  <!-- css -->
  <link rel="stylesheet" href="css/reset.css">
  <link rel="stylesheet" href="css/common.css">
+ <link rel="stylesheet" href="css/swiper.css">
 
  <!-- js -->
  <script src="js/jquery-3.6.0.min.js"></script>
  <script src="js/common.js"></script>
-
+ <script src="js/swiper.js"></script>
 
  <title>bworld</title>
  </head>
 
-<script>
+ <script type="text/javascript">
 
-</script>
+    $(document).ready(function() {
 
+      $("#header").load("include/header.html");
+      $("#footer").load("include/footer.html");
+
+    });
+  </script>
+
+<html>
 <body>
-    <header class="">
-    
-        <div class="inner">
-            <h1><a href="#">로고</a></h1>
-            <a href="#;" class="allmenu"></a>
-            <nav class="mb_hidden">
-                <h2>메뉴</h2>
-                <ul>
-                   <li>
-                        <a href="" target="_self">상품 서비스</a>
-                        <ul class="submenu">
-                            <li><a href="" target="_self">1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" target="_self">B 다이렉트샵</a>
-                        <ul class="submenu">
-                            <li><a href="" target="_self">1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" target="_self">혜택</a>
-                        <ul class="submenu">
-                            <li><a href="" target="_self">1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" target="_self">고객지원</a>
-                        <ul class="submenu">
-                            <li><a href="" target="_self">1</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="" target="_self">MY</a>
-                        <ul class="submenu">
-                            <li><a href="" target="_self">1</a></li>
-                        </ul>
-                    </li>
-                  </ul>
-            </nav>
-        </div>
-		<div class="submenu_bg"></div>
-	</header>
+	<div class="wrap">
+
+		<header id="header"></header>
+
+		<div class="contents main_bn">
+			<div class="swiper mySwiper">
+				<div class="swiper-wrapper">
+				  <div class="swiper-slide">Slide 1</div>
+				  <div class="swiper-slide">Slide 2</div>
+				  <div class="swiper-slide">Slide 3</div>
+				  <div class="swiper-slide">Slide 4</div>
+				  <div class="swiper-slide">Slide 5</div>
+				  <div class="swiper-slide">Slide 6</div>
+				  <div class="swiper-slide">Slide 7</div>
+				  <div class="swiper-slide">Slide 8</div>
+				  <div class="swiper-slide">Slide 9</div>
+				</div>
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			  </div>
+		</div>
+
+	</div>
 
 </body>
 
-<script type="text/javascript">
-	$(document).ready(function(){
-		var $win = $(window),
-			nav = $('nav'),
-			menu = nav.find('> ul > li'),
-			submenu = $('.submenu'),
-			submenuBg = $('.submenu_bg'),
-			menuBtn = $('.menu');
-
-		menuBtn.on('click', function(){
-			$('header').toggleClass('open');
-			//$(this).toggleClass('open');
-			//nav.toggleClass('mb_hidden');
-			/*if ($win.width() > 792){
-				submenu.stop().slideToggle(400);
-				submenuBg.stop().slideToggle(300);
-			}*/
-		});
-
-		menu.on({
-			"mouseenter":function(){
-				$('header').addClass('open');
-			},
-			"mouseleave":function(){
-				$('header').removeClass('open');
-			}
-		});
-
-		/*menu.on({
-			"mouseenter":function(){
-				if ($win.width() > 720){
-					nav.addClass('open');
-					menuBtn.addClass('open');
-					submenu.stop().slideDown(400);
-					submenuBg.stop().slideDown(300);
-				}
-			},
-			"mouseleave":function(){
-				if ($win.width() > 720){
-					nav.removeClass('open');
-					menuBtn.removeClass('open');
-					submenu.stop().slideUp(400);
-					submenuBg.stop().slideUp(300);
-				}
-			}
-		});*/
-
-		/*
-		$('header nav > ul > li > a').on('click', function(){
-			if ($win.width() < 721){
-				console.log(1);
-				var i = $(this).index();
-				if ($(this).is('.on')){
-					submenu.stop().slideUp();
-					menu.removeClass('on');
-				}else{
-					menu.removeClass('on').eq(i).addClass('on');
-					submenu.stop().slideUp().eq(i).stop().slideDown();
-				}
-				return false;
-			}
-		});*/
-		$('header nav > ul > li > a').on('click', function(){
-			if ($win.width() < 721){
-				$(this).next().slideToggle();
-				return false;
-			}
-		});
-	});
-	</script>
 </html>

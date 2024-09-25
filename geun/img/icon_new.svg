@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="icon_new" transform="translate(-529 -11.072)">
+    <path id="loupe_FILL1_wght200_GRAD0_opsz40" d="M15,25a9.67,9.67,0,0,0,3.9-.792A10.044,10.044,0,0,0,24.208,18.9a10.011,10.011,0,0,0,0-7.805A10.044,10.044,0,0,0,18.9,5.792a10.011,10.011,0,0,0-7.805,0A10.044,10.044,0,0,0,5.792,11.1,9.67,9.67,0,0,0,5,15v8.195A1.8,1.8,0,0,0,6.805,25Z" transform="translate(524 6.072)" fill="#3617ce"/>
+    <text id="N" transform="translate(535 25.072)" fill="#fff" font-size="11" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">N</tspan></text>
+  </g>
+</svg>
