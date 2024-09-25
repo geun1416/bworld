@@ -55,3 +55,7 @@ header .gnb li a.active::before {width: 100%;left: 50%;transform: translateX(-50
 /*메인*/
 .line_banner{height:130px;}
 .mySwiper{overflow: hidden;}
+.swiper-slide{width:100%;min-height:435px;}
+.mb01{background:url('../img/mb01.png')no-repeat;}
+.mb02{background:url('../img/mb02.png')no-repeat;}
+.mb03{background:url('../img/mb03.png')no-repeat;}
