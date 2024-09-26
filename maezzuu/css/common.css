@@ -150,7 +150,6 @@ header {
 /* dep1 */
 .submenu {
     width: 100%;
-    border-top: 1px solid #ddd;
     background-color: white;
     position: absolute;
     z-index: 999;
@@ -159,6 +158,7 @@ header {
 .subwrap {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid #ddd;
 }
 
 .gnb_menu {
@@ -170,7 +170,6 @@ header {
 }
 
 .currenton {
-    display: block;
     display: flex;
     justify-content: space-between;
 }
@@ -332,7 +331,7 @@ header {
 /* search */
 .search_box {
     position: absolute;
-    background-color: #ac0d0d;
+    background-color: #ffffff;
     width: 100%;
     height: 500px;
 }
@@ -389,5 +388,5 @@ header {
 main {
     width: 100%;
     height: 5000px;
-    background-color: gray;
+    background-color: #ddd;
 }

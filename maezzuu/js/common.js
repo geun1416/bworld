@@ -1,12 +1,7 @@
 /* gnb 마우스 hover시 풀다운메뉴 */
 /* .current - 하단메뉴 내려갈시 gnb_list css유지 */
 /* .currenton - gnb1~5번 각각의 하단메뉴 슬라이드*/
-window.onload = function() {
-  $('.gnb_menu').css('display','none');
-  
-};
 $(function () {
-  $('.gnb_menu').hide();
   $('.gnb_list').on('mouseover', function () {
     $('.gnb_list').removeClass('current');
     $('.gnb_menu').removeClass('currenton').stop(true, true).slideUp();
@@ -23,8 +18,9 @@ $(function () {
   });
 
   $('.gnb_list').on('mouseleave', function () {
-    $(this).addClass('current');
+    $(this).removeClass('current');
   });
+
   $('header').on('mouseleave', function () {
     $('.gnb_menu').each(function(index) {
       $(this).removeClass('currenton').stop(true, true).slideUp();
@@ -32,6 +28,7 @@ $(function () {
     });
   });
 });
+
 
 
 
