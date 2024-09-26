@@ -17,10 +17,6 @@ $(function () {
     $('.gnb_list').eq(index).addClass('current');
   });
 
-  $('.gnb_list').on('mouseleave', function () {
-    $(this).removeClass('current');
-  });
-
   $('header').on('mouseleave', function () {
     $('.gnb_menu').each(function(index) {
       $(this).removeClass('currenton').stop(true, true).slideUp();
@@ -28,11 +24,6 @@ $(function () {
     });
   });
 });
-
-
-
-
-
 
 /* dep2 클릭시 dep3 슬라이드토글 */
 $(function() {
@@ -51,6 +42,15 @@ $(function() {
   });
 });
 
+/* gnb2번 b다이렉트 마우스올라갈시 나타남 */
+$(function(){
+  $('.bdirect').on('mouseover', function() {
+      $('span').css('display', 'block');
+  })
+});
+
+
+/* login아이콘 마우스 올라갈시 나타남 */
 $(function(){
   $('.login').on('mouseover', function() {
       $('.logintext').css('display', 'block');
@@ -58,4 +58,5 @@ $(function(){
       $('.logintext').css('display', 'none');
   });
 });
+
 
