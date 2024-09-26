@@ -249,3 +249,17 @@ table {
 
 a{display:inline-block;text-decoration: none;color:inherit;cursor:pointer;}
 /* div, p, span{cursor:inherit;user-select: none;} */
+
+/* 스크롤바 설정*/
+*::-webkit-scrollbar{width: 6px;height:6px;}
+/* 스크롤바 막대 설정*/
+*::-webkit-scrollbar-thumb{height:auto;background-color:#b4b7bd;/* 스크롤바 둥글게 설정*/border-radius: 10px;    }
+/* 스크롤바 뒷 배경 설정*/
+*::-webkit-scrollbar-track{background-color: rgba(0,0,0,0);}
+/* textarea:disabled 스크롤바 뒷 배경 설정*/
+textarea:disabled::-webkit-scrollbar-track, 
+input:disabled::-webkit-scrollbar-track, 
+textarea:read-only::-webkit-scrollbar-track, 
+input:read-only::-webkit-scrollbar-track {
+  background-color: #efefef;
+}
