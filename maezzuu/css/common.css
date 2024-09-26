@@ -15,30 +15,44 @@ body {
 
 .inner {
     max-width: 1400px;
+    padding: 0 25px;
     margin: 0 auto;
 }
 
 /* header */
 header {
     background-color: #ffffff;
+    width: 100%;
+    height: 120px;
+    position:fixed;
+    top: 0;
+    left: 0;
 }
 
 .header_flex {
-    padding: 30px 10px;
+    width: 100%;
+    height: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
     text-align: center;
     align-items: center;
     box-sizing: border-box;
 }
+.header_flex > div:nth-child(3) {
+    margin-left: auto;
+}
+.logo {
+    margin-left: -13px;
+}
 
+/*  */
+
+/* gnb */
 .gnb {
-    width: 1200px;
     display: flex;
     justify-content: left;
-    margin: 0 60px;
-    gap: 40px;
+    margin: 0 100px;
+    gap: 50px;
 }
 
 .gnb_list {
@@ -48,29 +62,14 @@ header {
 }
 
 .gnb_list>a {
-    padding: 30px 0;
-    font-size: 1.2rem;
-    /* 24px */
+    padding: 10px 0;
+    font-size:  1.25rem;
+    /* 20px */
     font-weight: 500;
-
 }
 
-.gnb_list.current {
-    position: relative;
-    display: block;
+.gnb_list>a:hover {
     color: #3617CE;
-    
-}
-
-.gnb_list.current::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 5px;
-    width: 100%;
-    background: #3617CE;
-    z-index: 10;
 }
 
 .gnb_list::after {
@@ -90,12 +89,30 @@ header {
     left: 0;
 }
 
-.gnb_list:hover {
+.gnb_list.current {
+    position: relative;
+    display: block;
     color: #3617CE;
+
 }
 
+.gnb_list.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100%;
+    background: #3617CE;
+    z-index: 10;
+}
+
+/*  */
+
+/* gnb2번 b다이렉트 */
 .bdirect {
     position: relative;
+    transition: transform all 0.2s;
 }
 
 .bdirect strong {
@@ -106,7 +123,7 @@ header {
 .bdirect span {
     width: 150px;
     position: absolute;
-    top: -10px;
+    top: -30px;
     left: -25%;
     font-size: 0.75rem;
     /* 12px */
@@ -130,75 +147,14 @@ header {
     border-bottom: 1px solid #3617CE;
 }
 
-.util,
-.util_flex {
-    height: 30px;
-    display: flex;
-    justify-content: space-between;
-    gap: 15px;
-}
-
-.company div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.company div a {
-    display: inline-block;
-    padding: 2px 12px;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-weight: 400;
-}
-
+/* dep1 */
 .submenu {
     width: 100%;
     border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
     background-color: white;
-    padding: 25px 0;
     position: absolute;
     z-index: 999;
 }
-
-.login span {
-    position: relative;
-    display: inline-block;
-    display: none;
-}
-
-.login span::before {
-    position: absolute;
-    content: '로그인 하기';
-    width: 100px;
-    padding: 4px;
-    font-size: 0.75rem;
-    /* 12px */
-    font-weight: 500;
-    color: #3617CE;
-    border: 1px solid #3617CE;
-    border-radius: 30px;
-    top: -70px;
-    left: -70px;
-}
-
-.login span::after {
-    position: absolute;
-    content: '';
-    width: 8px;
-    height: 8px;
-    background-color: #ffffff;
-    bottom: 38px;
-    left: -16px;
-    transform: translateX(-50%) rotate(45deg);
-    border-right: 1px solid #3617CE;
-    border-bottom: 1px solid #3617CE;
-}
-
-
-
 
 .subwrap {
     display: flex;
@@ -206,31 +162,12 @@ header {
 }
 
 .gnb_menu {
-    display: flex;
     justify-content: space-between;
     width: 100%;
-    display: none;
-}
-
-.dep1_list>a {
-    display: block;
-    font-size: 1.2rem;
-    /* 16px */
-    font-weight: 500;
-}
-
-.dep1_list>a:hover {
-    color: #3617CE;
-}
-
-.gnb_menu {
-    display: flex;
     margin: 0 auto;
-    padding: 0 20px;
+    padding-bottom: 50px;
     display: none;
 }
-
-/*  */
 
 .currenton {
     display: block;
@@ -238,19 +175,23 @@ header {
     justify-content: space-between;
 }
 
-.gnb_menu>li {
-    flex: 1 1 20%;
-    padding: 10px 0;
+.dep2_list {
+    width: 180px;
+    margin: 20px 0;
+    position: relative;
+    
 }
 
-.gnb_menu>li>a {
+.dep1_list>a {
     position: relative;
     display: block;
-    padding-bottom: 25px;
-
+    font-size: 1.2rem;
+    /* 16px */
+    font-weight: 500;
+    padding: 20px 0;
 }
 
-.gnb_menu>li>a::after {
+.dep1_list>a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -261,12 +202,13 @@ header {
     transform: translateX(-50vw);
 }
 
-.dep2_list {
-    width: 180px;
-    margin: 20px 0;
-    position: relative;
+.dep1_list>a:hover {
+    color: #3617CE;
 }
 
+/*  */
+
+/* dep2 */
 .dep2_list a {
     display: inline-block;
     font-size: 1rem;
@@ -280,11 +222,31 @@ header {
     border-bottom: 1px solid #3617CE;
 }
 
+/*  */
+
+/* dep3 */
+.dep3 {
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+    display: none;
+}
+
+.dep3.on {
+    display: block;
+}
+
+.dep3 li a {
+    font-size: 0.875rem;
+    /* 14px */
+}
+
 .toggle {
     position: relative;
     cursor: pointer;
-    background-color: red;
 }
+
 .toggle::before {
     position: absolute;
     content: '';
@@ -293,27 +255,139 @@ header {
     background: url(../img/arrow_down.png)no-repeat center/cover;
     width: 16px;
     height: 16px;
+    transition: transform 0.3s ease;
 }
 
-.dep3 {
-    margin: 20px 0;
-    padding: 10px 15px;
+.toggle.active::before {
+    transform: rotate(180deg);
+}
+
+
+/*  */
+
+/* util */
+.util,
+.util_flex {
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.company div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.company div a {
+    display: inline-block;
+    padding: 4px 12px;
+    border: 1px solid black;
     border-radius: 5px;
-    background-color: #f1f1f1;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+.intro {
+    margin-right: 12px;
+}
+
+.login .logintext {
+    position: relative;
+    display: inline-block;
     display: none;
 }
-.dep3.on {
-    display: block;
+
+/* login마우스 hover시 */
+.login .logintext::before {
+    position: absolute;
+    content: '로그인 하기';
+    width: 100px;
+    padding: 4px;
+    font-size: 0.75rem;
+    /* 12px */
+    font-weight: 600;
+    color: #3617CE;
+    border: 1px solid #3617CE;
+    border-radius: 30px;
+    top: -78px;
+    left: -40px;
 }
-.dep3 li a {
-    font-size: 0.875rem;
-    /* 14px */
+
+.login .logintext::after {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    bottom: 48px;
+    left: 15px;
+    transform: translateX(-50%) rotate(45deg);
+    border-right: 1px solid #3617CE;
+    border-bottom: 1px solid #3617CE;
 }
+/*  */
+
+/* search */
+.search_box {
+    position: absolute;
+    background-color: #ac0d0d;
+    width: 100%;
+    height: 500px;
+}
+.search_box .search_form{
+    width: 100%;
+    padding: 80px 0;
+}
+.keyword_form {
+    position: relative;
+}
+
+.keyword_form input[type="search"] {
+    width: 100%;
+    height: 60px;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid #3617CE;
+    font-size: 1.875rem; /* 30px */
+    font-weight: 600;
+    color: #6b6b6b;
+    letter-spacing: -1px;
+}
+.keyword_form button {
+    position: absolute;
+    content: '';
+    border: none;
+    border-bottom: 2px solid #3617CE;
+    background-color: transparent;
+    background: url(../img/input_search.png)no-repeat center/contain;
+    width: 45px;
+    height: 60px;
+    top: 0;
+    right: 0;
+}
+.keyword_flex {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+
+
+
+/*  */
+
+
+
+
+
+
+
 
 
 
 main {
     width: 100%;
-    height: 100vh;
+    height: 5000px;
     background-color: gray;
 }
