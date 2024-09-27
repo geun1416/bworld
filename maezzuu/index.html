@@ -16,7 +16,7 @@
 
     <!-- js -->
     <script src="js/jquery-3.6.0.min.js"></script>
-   
+
     <title>B_WORLD</title>
 </head>
 
@@ -26,6 +26,7 @@
 
 <body>
     <div id="container">
+        <!-- header -->
         <header>
             <div class="header_flex inner">
                 <div class="logo">
@@ -395,7 +396,7 @@
                     <div class="search_form">
                         <div class="keyword_form">
                             <input type="search" placeholder="검색어를 입력해주세요">
-                            <button></button>
+                            <button class="search_btn"></button>
                         </div>
                         <div class="keyword_flex">
                             <h2>추천 검색어</h2>
@@ -420,11 +421,512 @@
                                 <li class="keywordon"><a href="#"><span>10</span>셋톱박스</a></li>
                             </ul>
                         </div>
+                        <button class="search_closebtn">닫기</button>
                     </div>
                 </div>
-                <button class="search_closebtn">닫기</button>
+            </div>
+            <div class="menu_box">
+                <div class="menu_search">
+                    <div class="menu_searchform">
+                        <input type="search" placeholder="메뉴를 검색해 보세요.">
+                        <button class="search_btn"></button>
+                    </div>
+                    <p><strong>'검색어'</strong>과(와) 일치되는 메뉴명이 없습니다.</p>
+                </div>
+                <div class="menu_box1">
+                    <div class="inner">
+                        <div class="menu_form">
+                            <div class="menu_title">
+                                <a href="#">
+                                    <img src="img/find-product.svg" alt="">
+                                    <h1 class="title">상품 서비스</h1>
+                                </a>
+                            </div>
+                            <ul class="gnb_menu inner menu_content"> <!-- gnb1번 -->
+                                <li class='dep1_list'><a href="#">인터넷</a> <!-- dep1-1 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">와이파이</a></li>
+                                        <li class="dep2_list"><a href="#">윙즈</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv</a> <!-- dep1-2 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv pop</a> <!-- dep1-3 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv cable</a> <!-- dep1-4 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">소상공인상품</a> <!-- dep1-5 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list toggle"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">더드림 성공팩</a></li>
+                                                <li class="dep3_list"><a href="#">B tv 우리동네광고</a></li>
+                                                <li class="dep3_list"><a href="#">On-Air/On-Ad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">소상공인 결합 할인 혜택</a>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">전화</a> <!-- dep1-6 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">일반전화</a></li>
+                                                <li class="dep3_list"><a href="#">국제전화</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_form">
+                            <div class="menu_title">
+                                <a href="#">
+                                    <img src="img/find-product.svg" alt="">
+                                    <h1 class="title">B 다이렉트샵</h1>
+                                </a>
+                            </div>
+                            <ul class="gnb_menu inner menu_content"> <!-- gnb1번 -->
+                                <li class='dep1_list'><a href="#">인터넷</a> <!-- dep1-1 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">와이파이</a></li>
+                                        <li class="dep2_list"><a href="#">윙즈</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv</a> <!-- dep1-2 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv pop</a> <!-- dep1-3 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv cable</a> <!-- dep1-4 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">소상공인상품</a> <!-- dep1-5 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list toggle"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">더드림 성공팩</a></li>
+                                                <li class="dep3_list"><a href="#">B tv 우리동네광고</a></li>
+                                                <li class="dep3_list"><a href="#">On-Air/On-Ad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">소상공인 결합 할인 혜택</a>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">전화</a> <!-- dep1-6 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">일반전화</a></li>
+                                                <li class="dep3_list"><a href="#">국제전화</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_form">
+                            <div class="menu_title">
+                                <a href="#">
+                                    <img src="img/find-product.svg" alt="">
+                                    <h1 class="title">혜택</h1>
+                                </a>
+                            </div>
+                            <ul class="gnb_menu inner menu_content"> <!-- gnb1번 -->
+                                <li class='dep1_list'><a href="#">인터넷</a> <!-- dep1-1 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">와이파이</a></li>
+                                        <li class="dep2_list"><a href="#">윙즈</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv</a> <!-- dep1-2 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv pop</a> <!-- dep1-3 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv cable</a> <!-- dep1-4 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">소상공인상품</a> <!-- dep1-5 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list toggle"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">더드림 성공팩</a></li>
+                                                <li class="dep3_list"><a href="#">B tv 우리동네광고</a></li>
+                                                <li class="dep3_list"><a href="#">On-Air/On-Ad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">소상공인 결합 할인 혜택</a>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">전화</a> <!-- dep1-6 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">일반전화</a></li>
+                                                <li class="dep3_list"><a href="#">국제전화</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_form">
+                            <div class="menu_title">
+                                <a href="#">
+                                    <img src="img/find-product.svg" alt="">
+                                    <h1 class="title">고객지원</h1>
+                                </a>
+                            </div>
+                            <ul class="gnb_menu inner menu_content"> <!-- gnb1번 -->
+                                <li class='dep1_list'><a href="#">인터넷</a> <!-- dep1-1 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">와이파이</a></li>
+                                        <li class="dep2_list"><a href="#">윙즈</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv</a> <!-- dep1-2 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv pop</a> <!-- dep1-3 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv cable</a> <!-- dep1-4 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">소상공인상품</a> <!-- dep1-5 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list toggle"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">더드림 성공팩</a></li>
+                                                <li class="dep3_list"><a href="#">B tv 우리동네광고</a></li>
+                                                <li class="dep3_list"><a href="#">On-Air/On-Ad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">소상공인 결합 할인 혜택</a>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">전화</a> <!-- dep1-6 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">일반전화</a></li>
+                                                <li class="dep3_list"><a href="#">국제전화</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="menu_form">
+                            <div class="menu_title">
+                                <a href="#">
+                                    <img src="img/find-product.svg" alt="">
+                                    <h1 class="title">MY</h1>
+                                </a>
+                            </div>
+                            <ul class="gnb_menu inner menu_content"> <!-- gnb1번 -->
+                                <li class='dep1_list'><a href="#">인터넷</a> <!-- dep1-1 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">와이파이</a></li>
+                                        <li class="dep2_list"><a href="#">윙즈</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv</a> <!-- dep1-2 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv pop</a> <!-- dep1-3 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">콘텐츠 안내</a></li>
+                                        <li class="dep2_list toggle"><a href="#">B tv 주요서비스</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">B tv+</a></li>
+                                                <li class="dep3_list"><a href="#">넷플릭스</a></li>
+                                                <li class="dep3_list"><a href="#">모바일 B tv</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">B tv cable</a> <!-- dep1-4 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a></li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a></li>
+                                        <li class="dep2_list toggle"><a href="#">채널안내</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">요금제별 채널</a></li>
+                                                <li class="dep3_list"><a href="#">실시간 편성표</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">소상공인상품</a> <!-- dep1-5 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list toggle"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">더드림 성공팩</a></li>
+                                                <li class="dep3_list"><a href="#">B tv 우리동네광고</a></li>
+                                                <li class="dep3_list"><a href="#">On-Air/On-Ad</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">소상공인 결합 할인 혜택</a>
+                                    </ul>
+                                </li>
+
+                                <li class='dep1_list'><a href="#">전화</a> <!-- dep1-6 -->
+                                    <ul class="dep2">
+                                        <li class="dep2_list"><a href="#">요금제</a>
+                                            <ul class="dep3">
+                                                <li class="dep3_list"><a href="#">일반전화</a></li>
+                                                <li class="dep3_list"><a href="#">국제전화</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dep2_list"><a href="#">부가서비스</a>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </header>
+        <!--  -->
+
+        <!-- main -->
         <main>
             <div class="contents main_bg">
                 <div class="inner">test</div>
@@ -436,9 +938,13 @@
                 <div class="inner">test</div>
             </div>
         </main>
+        <!--  -->
+
+        <!-- footer -->
         <footer>
             <div class="inner"></div>
         </footer>
+        <!--  -->
     </div>
     <div class="dim"></div>
     <script src="js/common.js"></script>

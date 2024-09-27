@@ -4,9 +4,18 @@
     메인컬러:#3617CE
     기본폰트사이즈:1rem = 16px
 */
+/* 공통 */
+.title {
+    font-size: 1.875rem;
+    /* 30px */
+    font-weight: 600;
+}
+
+/*  */
 body {
     width: 100%;
     overflow-x: hidden;
+    font-size: 1rem;
 }
 
 #container {
@@ -15,6 +24,7 @@ body {
 
 .inner {
     max-width: 1400px;
+    height: auto;
     padding: 0 45px;
     margin: 0 auto;
 }
@@ -156,7 +166,7 @@ header {
     width: 100%;
     background-color: white;
     position: absolute;
-    z-index: 999;
+    z-index: 997;
 }
 
 .subwrap {
@@ -178,12 +188,7 @@ header {
     justify-content: space-between;
 }
 
-.dep2_list {
-    width: 180px;
-    margin: 20px 0;
-    position: relative;
 
-}
 
 .dep1_list>a {
     position: relative;
@@ -194,7 +199,7 @@ header {
     padding: 20px 0;
 }
 
-.dep1_list>a::after {
+.subwrap>.gnb_menu>.dep1_list>a::after {
     content: '';
     position: absolute;
     left: 0;
@@ -212,6 +217,13 @@ header {
 /*  */
 
 /* dep2 */
+.dep2_list {
+    width: 180px;
+    margin: 20px 0;
+    position: relative;
+
+}
+
 .dep2_list a {
     display: inline-block;
     font-size: 1rem;
@@ -303,6 +315,10 @@ header {
     display: none;
 }
 
+.menu img {
+    width: 30px;
+    height: 30px;
+}
 /* login마우스 hover시 */
 .login .logintext::before {
     position: absolute;
@@ -346,7 +362,7 @@ header {
 
 .search_box .search_form {
     width: 100%;
-    padding: 50px 0 70px 0;
+    padding: 75px 0 50px 0;
     position: relative;
 }
 
@@ -368,11 +384,11 @@ header {
     outline: none;
 }
 
-.keyword_form button {
+.search_btn {
+    cursor: pointer;
     position: absolute;
     content: '';
     border: none;
-    border-bottom: 2px solid #3617CE;
     background-color: transparent;
     background: url(../img/input_search.png)no-repeat center/contain;
     width: 45px;
@@ -429,11 +445,12 @@ header {
     transition: all 0.2s ease-in-out;
 }
 
-.best_keyword:hover{
+.best_keyword:hover {
     border: 1px solid #3617CE;
     background-color: white;
     z-index: 1;
 }
+
 .best_keyword li {
     display: none;
     justify-content: flex-start;
@@ -476,7 +493,7 @@ header {
 .search_closebtn {
     position: absolute;
     top: 300px;
-    right: 425px;
+    right: 20px;
     border: none;
     background-color: transparent;
     cursor: pointer;
@@ -493,7 +510,10 @@ header {
     width: 20px;
     height: 20px;
 }
+
 /*  */
+
+/* menu_form */
 
 /* dim */
 .dim {
@@ -502,22 +522,124 @@ header {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* 반투명 검정색 */
-    display: none; /* 초기에는 숨김 */
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 900;
 }
+
 /*  */
+.menu_box {
+    position: fixed;
+    top: 120px;
+    width: 100%;
+    height: 200px;
+    background-color: #ffffff;
+    padding-top: 14px;
+    z-index: 998;
+    border-top: 1px solid #ddd;
+    display: none;
+}
+.menu_box.on {
+    display: block;
+}
+.menu_searchform {
+    width: 600px;
+    height: 60px;
+    background-color: white;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
 
+.menu_searchform input[type="search"] {
+    height: 60px;
+    font-size: 1.1rem;
+    border: none;
+    background-color: #F2F2F2;
+    border-radius: 50px;
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+}
 
+.menu_searchform .search_btn {
+    position: absolute;
+    content: '';
+    border: none;
+    background-color: transparent;
+    background: url(../img/input_search.png)no-repeat center/contain;
+    width: 38px;
+    height: 60px;
+    top: -2px;
+    right: 20px;
+}
 
+.menu_box p {
+    text-align: center;
+    padding-top: 12px;
+    padding-bottom: 50px;
+    font-weight: 400;
+}
 
+.menu_box p strong {
+    color: #3617CE;
+    font-weight: 600;
+}
 
+.menu_box1 {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: #ffffff;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    z-index: 997;
+}
 
+.menu_box1 .inner {
+    background-color: #ffffff;
+}
 
+.menu_form {
+    display: flex;
+}
+
+.menu_title {
+    width: 330px;
+}
+
+.menu_title a {
+    display: flex;
+    align-items: center;
+}
+
+.menu_title a h1 {
+    margin-left: 5px;
+}
+
+.menu_content {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px;
+}
+
+.menu_content>.dep1_list>a {
+    border-bottom: 1px solid #ddd;
+    padding-top: 7px;
+}
 
 
 main {
     width: 100%;
     height: 5000px;
-    background-color: #af3737;
-    transition: filter 0.3s ease; /* 부드러운 전환 효과 */
+    background-color: #6d2222;
+    transition: filter 0.3s ease;
+    /* 부드러운 전환 효과 */
 }
