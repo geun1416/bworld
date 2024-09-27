@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마우스 오버 키워드 리스트</title>
+    <style>
+        .best_keyword {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 200px;
+        }
+
+        .best_keyword li {
+            display: none;
+        }
+
+        .best_keyword li.keywordon:first-child {
+            display: block;
+        }
+
+        .best_keyword:hover li {
+            display: block;
+        }
+
+        .best_keyword li a {
+            text-decoration: none;
+            color: black;
+            display: block;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .best_keyword li a:hover {
+            background-color: #e4e4e4;
+        }
+    </style>
+</head>
+<body>
+    <ul class="best_keyword">
+        <li class="keywordon"><a href="#"><span>1</span>B tv</a></li>
+        <li class="keywordon"><a href="#"><span>2</span>속도</a></li>
+        <li class="keywordon"><a href="#"><span>3</span>인터넷</a></li>
+        <li class="keywordon"><a href="#"><span>4</span>채널</a></li>
+        <li class="keywordon"><a href="#"><span>5</span>혜택</a></li>
+        <li class="keywordon"><a href="#"><span>6</span>wifi</a></li>
+        <li class="keywordon"><a href="#"><span>7</span>이전설치</a></li>
+        <li class="keywordon"><a href="#"><span>8</span>결합</a></li>
+        <li class="keywordon"><a href="#"><span>9</span>A/S</a></li>
+        <li class="keywordon"><a href="#"><span>10</span>셋톱박스</a></li>
+    </ul>
+</body>
+</html>

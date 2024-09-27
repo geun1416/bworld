@@ -15,7 +15,7 @@ body {
 
 .inner {
     max-width: 1400px;
-    padding: 0 25px;
+    padding: 0 45px;
     margin: 0 auto;
 }
 
@@ -27,6 +27,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 999;
 }
 
 .header_flex {
@@ -335,14 +336,18 @@ header {
 
 /* search */
 .search_box {
-    position: absolute;
+    position: relative;
+    z-index: 999;
     background-color: #ffffff;
     width: 100%;
+    height: 350px;
+    display: none;
 }
 
 .search_box .search_form {
     width: 100%;
-    padding: 70px 0;
+    padding: 50px 0 70px 0;
+    position: relative;
 }
 
 .keyword_form {
@@ -351,7 +356,7 @@ header {
 
 .keyword_form input[type="search"] {
     width: 100%;
-    height: 60px;
+    height: 70px;
     padding: 10px 0;
     border: none;
     border-bottom: 2px solid #3617CE;
@@ -371,15 +376,15 @@ header {
     background-color: transparent;
     background: url(../img/input_search.png)no-repeat center/contain;
     width: 45px;
-    height: 60px;
+    height: 70px;
     top: 0;
     right: 0;
 }
 
 .keyword_flex {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin: 20px auto;
     font-weight: 700;
 }
@@ -387,56 +392,120 @@ header {
 .keyword_flex h2 {
     font-size: 1.5rem;
     font-weight: 700;
+    padding-top: 18px;
 }
 
 .keyword,
 .best_keyword {
     display: flex;
-    justify-content: flex-start; /* 요소들을 왼쪽 정렬 */
+    justify-content: flex-start;
+    /* 요소들을 왼쪽 정렬 */
     gap: 15px;
     letter-spacing: -5px;
 }
 
 .keyword {
     width: 55%;
+    padding-top: 18px;
 }
 
 .keyword li a {
     color: #797979;
     background-color: #ffffff;
-    letter-spacing: -0.5px;
+    letter-spacing: -1.5px;
     font-size: 1rem;
     font-weight: 600;
     padding: 6px 16px;
     border: 1px solid #ddd;
     border-radius: 20px;
+    letter-spacing: -1.5px;
 }
+
 .best_keyword {
     width: 280px;
+    padding: 20px;
     flex-direction: column;
+    border: 1px solid white;
+    transition: all 0.2s ease-in-out;
+}
+
+.best_keyword:hover{
+    border: 1px solid #3617CE;
+    background-color: white;
+    z-index: 1;
 }
 .best_keyword li {
-    display: flex;
+    display: none;
     justify-content: flex-start;
 }
 
-.best_keyword li span{
-    font-weight: 600;
-    font-size: 1rem;
+.best_keyword li.keywordon:first-child {
+    display: flex;
+}
+
+.best_keyword:hover li {
+    display: flex;
+}
+
+.best_keyword li a {
+    width: 100%;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+}
+
+.best_keyword li a:hover {
+    font-weight: 500;
+}
+
+.best_keyword li a span {
+    display: inline-block;
     color: white;
+    font-size: 1rem;
+    font-weight: 600;
     background-color: #3617CE;
     width: 24px;
     height: 24px;
-    display: flex;
-    justify-content: center;
+    line-height: 24px;
     align-items: center;
     text-align: center;
     margin-right: 12px;
     border-radius: 4px;
 }
 
+.search_closebtn {
+    position: absolute;
+    top: 300px;
+    right: 425px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.search_closebtn:after {
+    position: absolute;
+    content: '';
+    background: url(../img/ic_header_search_close.svg)no-repeat center/cover;
+    top: 3px;
+    left: 30px;
+    width: 20px;
+    height: 20px;
+}
 /*  */
 
+/* dim */
+.dim {
+    position: fixed;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* 반투명 검정색 */
+    display: none; /* 초기에는 숨김 */
+}
+/*  */
 
 
 
@@ -449,5 +518,6 @@ header {
 main {
     width: 100%;
     height: 5000px;
-    background-color: #ddd;
+    background-color: #af3737;
+    transition: filter 0.3s ease; /* 부드러운 전환 효과 */
 }

@@ -59,4 +59,16 @@ $(function(){
   });
 });
 
+$(function(){
+  $('.search').on('click', function(){
+    $('.search_box').css({display:'block',borderTop:'1px solid black'});
+    $('.dim').css('display', 'block'); // dim 효과를 보이게 함
+    $('.best_keyword').addClass('show'); // show 클래스 추가
+  });
 
+  $('.search_closebtn').on('click', function(){
+    $('.search_box').css('display', 'none');
+    $('.dim').css('display', 'none'); // dim 효과를 숨김
+    $('.best_keyword').removeClass('show'); // show 클래스 제거
+  });
+});
