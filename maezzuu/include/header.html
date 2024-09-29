@@ -983,8 +983,16 @@ $(function () {
   $(function(){
     $('.menu').on('click',function(){
       $('.menu_box').toggleClass('on')
-      $('main').css('display', 'none');
-  
+    //   $('main').css('display', 'none');
+      // 메뉴가 열렸을 때 body의 overflow를 숨기기
+      if ($('.menu_box').hasClass('on')) {
+      $('.menu img').attr('src', 'img/menu_close_btn.svg');
+      $('body').css('overflow', 'hidden');
+    } else {
+      $('.menu img').attr('src', 'img/ic_menu.svg');
+      $('body').css('overflow', 'auto'); // 메뉴가 닫혔을 때 원래대로
+    }
+    
       if ($('.menu_box').hasClass('on')) {
         $('.menu img').attr('src', 'img/menu_close_btn.svg');
       } else {
@@ -992,4 +1000,21 @@ $(function () {
       }
     })
   })
+
+	//상단고정
+    if( $("header").length ){
+            var jbOffset = $("header").offset();
+            $( window ).scroll( function() {
+                if ( $( document ).scrollTop() > jbOffset.top ) {
+                    $( 'header' ).addClass( 'fixed' );
+                }
+                else {
+                    $( 'header' ).removeClass( 'fixed' );
+                }
+            });
+        }
+
 </script>
+
+
+
