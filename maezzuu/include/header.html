@@ -923,13 +923,13 @@ $(function () {
       });
     });
   
-    $('header').on('mouseleave', function () {
-      $('.subwrap > .gnb_menu').each(function(index) {
-        $(this).removeClass('currenton').stop(true, true).slideUp();
-        $('.gnb_list').eq(index).removeClass('current');
-        $('.dim').css('display', 'none');
-      });
-    });
+    // $('header').on('mouseleave', function () {
+    //   $('.subwrap > .gnb_menu').each(function(index) {
+    //     $(this).removeClass('currenton').stop(true, true).slideUp();
+    //     $('.gnb_list').eq(index).removeClass('current');
+    //     $('.dim').css('display', 'none');
+    //   });
+    // });
   });
   
   /* dep2 클릭시 dep3 슬라이드토글 */
@@ -967,24 +967,20 @@ $(function () {
   });
   
   $(function(){
-  $('.search').on('click', function(){
-    $('.search_box').css({display:'block', borderTop:'1px solid black'});
-    $('.dim').css('display', 'block'); // dim 효과를 보이게 함
-    $('.best_keyword').addClass('show'); // show 클래스 추가
+    $('.search').on('click', function(){
+      $('.search_box').css({display:'block',borderTop:'1px solid black'});
+      $('.dim').css('display', 'block'); // dim 효과를 보이게 함
+      $('.best_keyword').addClass('show'); // show 클래스 추가
+      $('body').addClass('hidden'); // body에 hidden 클래스 추가
+    });
+  
+    $('.search_closebtn').on('click', function(){
+      $('.search_box').css('display', 'none');
+      $('.dim').css('display', 'none'); // dim 효과를 숨김
+      $('.best_keyword').removeClass('show'); // show 클래스 제거
+      $('body').removeClass('hidden'); // body에서 hidden 클래스 제거
+    });
   });
-
-  // 마우스가 search_box나 dim에 있는 경우 dim 유지
-  $('.search_box, .dim').on('mouseenter', function(){
-    $('.dim').css('display', 'block'); // dim 유지
-  });
-
-  $('.search_closebtn').on('click', function(){
-    $('.search_box').css('display', 'none');
-    $('.dim').css('display', 'none'); // dim 효과를 숨김
-    $('.best_keyword').removeClass('show'); // show 클래스 제거
-  });
-});
-
   
   $(function(){
     $('.menu').on('click',function(){
@@ -1007,19 +1003,17 @@ $(function () {
     })
   })
 
-	//상단고정
-    if( $("header").length ){
-            var jbOffset = $("header").offset();
-            $( window ).scroll( function() {
-                if ( $( document ).scrollTop() > jbOffset.top ) {
-                    $( 'header' ).addClass( 'fixed' );
-                }
-                else {
-                    $( 'header' ).removeClass( 'fixed' );
-                }
-            });
-        }
+// 상단고정
+if ($("header").length) {
+    var jbOffset = $("header").offset().top;
+    var headerHeight = $("header").outerHeight();
 
+    $(window).scroll(function () {
+        var isFixed = $(document).scrollTop() > jbOffset;
+        $("header").toggleClass("fixed", isFixed);
+        $("body").css("padding-top", isFixed ? headerHeight : 0);
+    });
+}
 </script>
 
 
