@@ -9,6 +9,7 @@
     font-size: 1.875rem;
     /* 30px */
     font-weight: 600;
+    padding-bottom: 25px;
 }
 .main_title {
     font-size: 1.875rem;
@@ -24,12 +25,39 @@
 
 .sub_title {
     font-size: 1.25rem;
+    font-weight: 500;
     /* 20px; */
 }
 
 .item_title {
-    font-size: 34px;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
     font-weight: 500;
+    line-height: 30px;
+}
+.item_intro{
+    font-size: 18px;
+    color: #797979;
+    font-weight: 400;
+}
+.item_flex {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    gap: 25px;
+}
+.item_flex li {
+    width: 100%;
+    border-radius: 20px;
+}
+.item_flex li a {
+    display: block;
+    width: 100%;
+    height: 330px;
+    padding: 48px 10px 40px;
+    text-align: center;
 }
 /*  */
 body {
@@ -192,7 +220,7 @@ header.fixed {
     width: 100%;
     background-color: white;
     position: absolute;
-    z-index: 997;
+    z-index: 990;
 }
 
 .subwrap {
@@ -688,13 +716,14 @@ main {
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
     display: none;
-    z-index: 900;
+    z-index: 999;
 }
 
 /*  */
 /* header.html */
 
 /* main */
+/* 메인스와이퍼 */
 .main_bg .mySwiper {
     width: 100%;
     margin: 0 auto;
@@ -785,6 +814,7 @@ main {
     position: relative;
     width: 100%;
 }
+/* 이런상품들을 찾고계신가요? */
 .item_box {
     margin-top:-50px;
     width: 100%;
@@ -807,6 +837,8 @@ main {
     flex-direction: column;
     text-align: center;
 }
+/*  */
+/* 즐겨찾는메뉴 */
 .favorites_box {
     display: flex;
     align-items: center;
@@ -825,7 +857,8 @@ main {
     border: 1px solid #e4e4e4;
     border-radius: 50px;
 }
-
+/* */
+/* 추천상품 */
 .gray_bg {
     background-color: #F5F5F7;
     padding: 60px 0 88px;
@@ -835,6 +868,7 @@ main {
     flex-direction: column;
     text-align: center;
     background-color: white;
+    width: 415px;
     min-height: 490px;
     padding: 36px 30px 30px;
     border: 2px solid #3617ce;
@@ -849,12 +883,15 @@ main {
     letter-spacing: -1px;
 }
 .suggest img {
+    width: 100%;
+    height: 80px;
     margin-top: 15px;
 }
 .price {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap:10px;
     margin-top: 15px;
 }
 .price span {
@@ -880,6 +917,8 @@ main {
 }
 .benefit li {
     position: relative;
+    padding-left: 10px;
+    font-weight: 400;
 }
 .benefit li:before{
     content: '';
@@ -890,4 +929,81 @@ main {
     height: 4px;
     border-radius: 50%;
     background-color: #a9a9a9;
+}
+.suggest_btn {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 30px;
+}
+.suggest_btn a {
+    color: white;
+    background-color: #3617CE;
+    width: 100%;
+    height: 56px;
+    border: 1px solid #a9a9a9;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 54px;
+}
+.suggest_view a {
+    width: 100%;
+    height: 56px;
+    margin-top: 10px;
+    border: 1px solid #a9a9a9;
+    border-radius: 6px;
+    background-color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 54px;
+}
+
+.suggestSwiper .swiper-button-next,
+.suggestSwiper .swiper-button-prev {
+    background-color: #000000;
+    opacity: 40%;
+    color: #ffffff !important; 
+    border-radius: 50%;
+    width: 30px !important;
+    height: 30px !important;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 14px !important;
+    font-weight: 100 !important;
+    line-height: 1 !important;
+}
+/*  */
+/* 인터넷/B tv 요금계산기 */
+.calc {
+    width: 100%;
+    height: 130px;
+    display: inline-block;
+    margin: 0 auto;
+    color: #fff;
+    background-color: #3617CE;
+    text-align: center;
+    line-height: 130px;
+}
+.calc span {
+    font-size: 24px;
+    font-weight: 500;
+}
+.calc_btn {
+    content: "인터넷/B tv 요금 계산기";
+    display: inline-block;
+    margin-left: 28px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    padding: 11px 27px;
+    border: 1px solid white;
+    border-radius: 50px;
+}
+/*  */
+
+/* 혜택 */
+.advantage_box {
+    margin-top: 60px;
+    margin-bottom: 100px;
 }
