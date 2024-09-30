@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko" xml:lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B_WORLD</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- js -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container">
+        <div id="header"></div>
+        <main>
+            <div class="contents main_bg">
+                <div class="inner">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide bg01">Slide 1</div>
+                            <div class="swiper-slide bg02">Slide 2</div>
+                            <div class="swiper-slide bg03">Slide 3</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer>
+        </footer>
+    </div>
+
+    <div class="dim"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("include/header.html");
+            $("#footer").load("include/footer.html");
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
