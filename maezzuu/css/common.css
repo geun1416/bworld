@@ -441,8 +441,6 @@ header.fixed {
     justify-content: space-between;
 }
 
-
-
 .dep1_list>a {
     position: relative;
     display: block;
@@ -452,11 +450,11 @@ header.fixed {
     padding: 20px 0;
 }
 
-.subwrap>.gnb_menu>.dep1_list>a::after {
+.subwrap>.gnb_menu>.dep1_list::after {
     content: '';
     position: absolute;
-    left: 0;
-    bottom: 0px;
+    left: 50%;
+    top: 65px;
     width: 100vw;
     height: 1px;
     background-color: #ddd;
@@ -1375,6 +1373,20 @@ main {
     background: url(../img/ico_notice_arw.png)no-repeat center/cover;
 }
 /*  */
+
+/* sub01 서브페이지1 */
+/* item_service */
+#itemservice .header .gnb_menu {
+    display: block;
+}
+.service_title {
+    font-size: 90px;
+    line-height: 120px;
+    font-weight: 700;
+    letter-spacing: -2.25px;
+    text-align: center;
+    padding: 60px 0 120px 0;
+}
 .pkg01 {
     background-color: #ffeef0;
 }
