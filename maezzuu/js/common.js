@@ -22,3 +22,12 @@ var swiper = new Swiper(".suggestSwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+var swiper = new Swiper(".hotnewSwiper", {
+  slidesPerView: 'auto',
+  spaceBetween: 2,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
