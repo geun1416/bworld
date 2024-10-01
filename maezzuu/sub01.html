@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko" xml:lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B WORLD</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- js -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <!-- 상품서비스 사이트 -->
+    <div id="container">
+        <div id="header"></div>
+        <main>
+            <div class="item_service inner">
+                <h1 class="service_title">내 라이프스타일에<br>딱 맞는 추천상품</h1>
+                <div class="swiper serviceSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide pkg01">
+                            <div class="inner">
+                                <div class="slide_box">
+                                    <p class="slide_text01">B TV & NEPLIX</p>
+                                    <h2 class="slide_title">요즘 넷플릭스 어디서 봄?<br>B tv에서 봄!
+                                    </h2>
+                                    <p class="slide_text02">더 알뜰하게 보니까!</p>
+                                    <a href="#" class="slide_btn">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide pkg02">
+                            <div class="inner">
+                                <div class="slide_box">
+                                    <p class="slide_text01">놓친 헤택모음.zip</p>
+                                    <h2 class="slide_title">클릭하면<br>업그레이드 혜택이 탁!
+                                    </h2>
+                                    <a href="#" class="slide_btn">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide pkg03">
+                            <div class="inner">
+                                <div class="slide_box">
+                                    <p class="slide_text01">B tv에서도, 스마트폰에서도</p>
+                                    <h2 class="slide_title">우리 아이를 위한<br>키즈 브랜드 ZEM
+                                    </h2>
+                                    <a href="#" class="slide_btn">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide pkg04">
+                            <div class="inner">
+                                <div class="slide_box">
+                                    <p class="slide_text01">B tv에서도, 스마트폰에서도</p>
+                                    <h2 class="slide_title">우리 아이를 위한<br>키즈 브랜드 ZEM
+                                    </h2>
+                                    <a href="#" class="slide_btn">자세히 보기</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div><!-- 메인스와이퍼 -->
+            </div>
+            <div class="inner">
+                <div class="favorites_box"><!-- 즐겨찾는메뉴 -->
+                    <h3 class="main_title">
+                        즐겨찾는 메뉴
+                    </h3>
+                    <ul class="favorites">
+                        <li><a href="#" class="main_text">서비스 가능 지역 조회</a></li>
+                        <li><a href="#" class="main_text">요금제별 채널</a></li>
+                        <li><a href="#" class="main_text">실시간 편성표</a></li>
+                        <li><a href="#" class="main_text">콘텐츠 안내</a></li>
+                        <li><a href="#" class="main_text">나의 신청 내역</a></li>
+                    </ul>
+                </div><!-- 즐겨찾는메뉴 -->
+            </div>
+    </div>
+    </div>
+    </main>
+    <footer id="footer"></footer>
+    </div>
+
+    <div class="dim"></div>
+
+    <script>
+        $(document).ready(function () {
+            $("#header").load("include/header.html");
+            $("#footer").load("include/footer.html");
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
+
+</body>
+
+</html>
