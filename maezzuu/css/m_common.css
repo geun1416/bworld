@@ -1,0 +1,239 @@
+@charset "utf-8";
+
+/* 768px */
+@media screen and (max-width: 768px) {
+    /* header */
+    
+    .gnb_list {
+        width: 100%;
+        display: none;
+    }
+    .company {
+        display: none;
+    }
+    .util_nav .login,
+    .util_nav .menu {
+        display: none;
+    }
+    .search_title {
+        display: block;
+        position: relative;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    .search_title::before {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 15px;
+        top: 5px;
+        left: 0;
+        background:url(../img/arrow_down.png)
+    }
+    .search > a > img {
+        width: 50px;
+        height: 50px;
+    }
+    .search_box {
+        height: 100vh;
+        overflow: scroll;
+    }
+    .keyword_form input[type="search"] {
+        height: 100px;
+        padding: 10px 30px;
+        background-color: #F2F2F2;
+        border-radius: 50px;
+        border: none;
+        font-size:28px;
+    }
+    .search_btn {
+        width: 65px;
+        height: 70px;
+        top: 10px;
+        right: 30px;
+    }
+    .keyword_flex > .suggest_key {
+        display: none;
+    }
+    .keyword_flex .keyword {
+        display: none;
+    }
+    .keyword_flex {
+        flex-direction: column;
+    }
+    .best_keyword {
+        margin-top: 40px;
+        width: 100%;
+        padding: 20px;
+        flex-direction: column;
+        border: 1px solid #ddd;
+        transition: all 0.2s ease-in-out;
+    }
+    .best_keyword li {
+        display: block;
+    }
+    .best_keyword:hover {
+        border:1px solid #ddd;
+    }
+    .search_closebtn {
+        position: absolute;
+        top: 300px;
+        right: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    /*  */
+    /* 메인스와이퍼 */
+    .slide_box {
+        padding: 50px 0;
+    }
+    .slide_btn {
+        display: none;
+    }
+    .bg01 {
+        background: url('../img/mb01.png') no-repeat center/cover;
+    }
+    
+    .bg02 {
+        background: url('../img/mb02.png')no-repeat center/cover;
+    }
+    
+    .bg03 {
+        background: url('../img/mb03.png')no-repeat center/cover;   
+    }
+    .swiper-button-next,
+    .swiper-button-prev {
+    display: none !important;
+    }
+    /*  */
+    /* 이런상품들을 찾고계신가요? */
+    .item_box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 50px;
+        height: auto;
+    }
+    .item_title {
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+    .item_box_right {
+        gap: 20px;
+    }
+    .item_box_right img {
+        width: 100px;
+        height: 100px;
+    }
+    /*  */
+    /* 즐겨찾는메뉴 */
+    .favorites_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .favorites {
+        width: 620px;
+        margin-top: 20px;
+        margin-left: 0;
+        flex-wrap: wrap;
+    }
+    .favorites li {
+        width: 300px;
+    }
+    .favorites .on {
+        display: none;
+    }
+    .favorites a {
+        text-align: center;
+        padding: 12px 10px;
+        font-size: 24px;
+    }
+    .favorites_btn {
+        position: absolute;
+        top:80px;
+        right: 50px;
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: url(../img/arrow_down.png)no-repeat center/cover;
+    }
+    /*  */
+    /* 추천상품 */
+    .suggest {
+        width: 100%;
+    }
+    /*  */
+    /* 인터넷/B tv 요금계산기 */
+    .calc {
+        height: auto;
+        line-height: 70px;
+    }
+    .calc span {
+        font-size: 18px;
+    }
+    .calc_btn {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    /*  */
+    /* 혜택 */
+    .item_flex {
+        flex-wrap: wrap;
+    }
+    .item_flex li {
+        flex: 0 0 calc(50% - 30px); /* 두 개씩 보이도록 설정, 간격 조정 */
+        margin: 5px; /* 여백 설정 */
+    }
+    .item_flex li a img {
+        width: 100px;
+        height: auto;
+    }
+    /*  */
+    /* HOT & NEW */
+    .hotnew .swiper {
+    overflow: hidden;
+    }
+    /*  */
+    /* 맞춤패키지 */
+    .pkg li a img {
+        width: 300px;
+        height: auto;
+    }
+    .pkg .item_title {
+        font-size: 24px;
+    }
+    /*  */
+    /* 셀프문제해결 */
+    .self_flex {
+        display: block;
+        text-align: center;
+    }
+    .item_title {
+        font-size: 24px;
+    }
+    .self_flex .item_intro {
+        display: none;
+        margin: 0;
+    }
+    .self_list li a {
+        align-items: center;
+    }
+    /*  */
+    /* 공지사항 */
+    .notice_list {
+        width: 420px;
+    }
+    /*  */
+    /* footer */
+    #footer {
+        display: none;
+    }
+}
+
+/* 430px */
+@media screen and (max-width: 430px) {
+
+}

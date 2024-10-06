@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".suggestSwiper", {
-  slidesPerView: 3,
+  slidesPerView: 3, // 기본값: PC에서 3개
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -21,7 +21,15 @@ var swiper = new Swiper(".suggestSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  breakpoints: {
+    // 모바일 설정
+    768: {
+      slidesPerView: 1, // 모바일에서 1개
+      spaceBetween: 10,
+    },
+  },
 });
+
 
 var swiper = new Swiper(".hotnewSwiper", {
   slidesPerView: 'auto',
@@ -29,6 +37,19 @@ var swiper = new Swiper(".hotnewSwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // 모바일 설정
+    768: {
+        slidesPerView: 2, // 한 줄에 2개 보이게 설정
+        spaceBetween: 2,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      
+      
+    },
   },
 });
 
@@ -42,4 +63,11 @@ var swiper = new Swiper(".serviceSwiper", {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+/* 태블릿 768px */
+$(function(){
+  $('.favorites_btn').on('click',function(){
+    $('.favorites .open').toggleClass('on');
+  });
 });
