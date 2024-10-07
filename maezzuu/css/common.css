@@ -1049,14 +1049,20 @@ main {
     line-height: 40px;
 }
 .item_box_right {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    flex-wrap: wrap;
 }
 
 .item {
+    display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+.item a img {
+    flex: 1 1 200px;
 }
 
 /*  */
@@ -1258,10 +1264,22 @@ main {
     margin-top: 60px;
     margin-bottom: 100px;
 }
+.item_flex li a img {
+    width: 100%;
+    height: auto;
+}
+.advantage li a img {
+    width: 100px;
+    height: auto;
+}
+
 
 /*  */
 
 /* hot&news */
+.contents.hotnew .inner{
+    overflow: hidden;
+}
 .hotnew_box {
     padding-bottom: 100px;
 }
@@ -1269,7 +1287,6 @@ main {
 .hotnew .swiper {
     overflow: visible;
 }
-
 .hotnewSwiper .swiper-slide {
     width: auto !important;
     padding-right: 20px;

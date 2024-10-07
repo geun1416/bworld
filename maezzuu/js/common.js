@@ -22,8 +22,12 @@ var swiper = new Swiper(".suggestSwiper", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
+    1280: {
+      slidesPerView: 2, // 모바일에서 2개
+      spaceBetween: 10,
+    },
     // 모바일 설정
-    768: {
+    900: {
       slidesPerView: 1, // 모바일에서 1개
       spaceBetween: 10,
     },
@@ -65,9 +69,3 @@ var swiper = new Swiper(".serviceSwiper", {
   },
 });
 
-/* 태블릿 768px */
-$(function(){
-  $('.favorites_btn').on('click',function(){
-    $('.favorites .open').toggleClass('on');
-  });
-});
