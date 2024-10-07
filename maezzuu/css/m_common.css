@@ -1,5 +1,14 @@
 @charset "utf-8";
 
+/* 1280px */
+@media screen and (max-width: 1280px) {
+    .item_box {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 50px;
+        height: auto;
+    }
+}
 /* 768px */
 @media screen and (max-width: 768px) {
     /* header */
@@ -111,12 +120,7 @@
     }
     /*  */
     /* 이런상품들을 찾고계신가요? */
-    .item_box {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 25px 50px;
-        height: auto;
-    }
+    
     .item_title {
         font-size: 28px;
         margin-bottom: 5px;
