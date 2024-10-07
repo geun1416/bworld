@@ -21,9 +21,9 @@
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-      780: {
+      880: {
         slidesPerView: 1, 
-        spaceBetween: 0,
+        spaceBetween: 14,
       },
     },
   });

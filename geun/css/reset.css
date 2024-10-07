@@ -41,10 +41,19 @@
 	url('../font/NotoSansKR-Bold.otf') format('opentype'),
 	url('../font/NotoSansKR-Bold.woff') format('woff'),
 	url('../font/NotoSansKR-Bold.woff2') format('woff2');
+	font-weight:600;
+	font-style:normal;
+  }
+
+  @font-face {
+	font-family:"NotoSansKR";
+	src:
+	url('../font/NotoSansKR-Black.otf') format('opentype'),
+	url('../font/NotoSansKR-Black.woff') format('woff'),
+	url('../font/NotoSansKR-Black.woff2') format('woff2');
 	font-weight:900;
 	font-style:normal;
   }
-  
 /* v2.0 | 20110126
   http://meyerweb.com/eric/tools/css/reset/
   License: none (public domain)

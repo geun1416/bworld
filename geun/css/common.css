@@ -48,7 +48,14 @@ header .gnb li a.active::before {width: 100%;left: 50%;transform: translateX(-50
 .dropdown-content {max-height:0;overflow: hidden;}
 .dropdown-content.on {max-height:120px;overflow-y:scroll;background:#f2f2f2;color:#797979;font-size:14px;display:flex;flex-direction:column;padding:14px;border-radius:6px;margin-top:10px}
 .dropdown-content a + a{margin-top:4px}
-
+.menu_ti{font-size:1.8rem;font-weight:600;margin-bottom:30px;}
+.btn{display:inline-block;}
+.btn_blue{background:#3617ce;color:#fff;}
+.btn_wh{background:#fff;border:1px solid #ddd;}
+.btn_group{display:flex;}
+.btn_group .btn{flex:1;}
+.btn_group .btn + .btn{margin-left:10px}
+.bg_gray{background:#f4f4f4;padding:60px 0;margin-top:50px}
 
 /*메인*/
 .main_bn .mySwiper{overflow: hidden;}
@@ -75,8 +82,29 @@ background-color: #fff;box-shadow: 0 6px 9px rgba(0, 0, 0, 0.16);position:relati
 .favorites_box ul li a:hover{border-color:#3617ce;color:#3617ce}
 .favorites_box ul li + li{margin-left:10px}
 
-.products{background:#f4f4f4;margin-top:50px;}
 .productsSwiper{position: relative;overflow: hidden;}
+.products_box{background:#fff;padding:36px 30px 30px;border-radius:16px;border: 2px solid #3617ce;
+	min-height:490px;display:flex;flex-direction: column;align-items:center;}
+.products_box h6{font-size:1.5rem;font-weight:bold;letter-spacing:-1px;height:84px}
+.prod_price {min-height:42px; margin-top: 15px;}
+.prod_price .price_del {font-size:21px; font-weight:400; color:#797979;}
+.prod_price .price_rate {margin-left:0px;font-size:25px; font-weight:900; color:#ff404e;}
+.prod_benefit {display:flex; flex-direction:column; align-self:center; min-height:62px; margin-top:15px; font-size:14px; font-weight:400; text-align:left; color:#a9a9a9; line-height:20px;}
+.prod_benefit li {display:inline-block; position:relative; padding-left:10px;}
+.prod_benefit li::before {content:''; position:absolute; top:7px; left:0; width:4px; height:4px; border-radius:50%; background-color: #a9a9a9;}
+.products_box .btn_wrap{width:100%;margin-top:30px}
+.products_box .btn_wrap a{width:100%;height:56px;line-height:52px;border-radius:4px;text-align:center;font-size:1.05rem;font-weight:500}
+.products_box .btn_group{margin-bottom:10px;}
+
+.etc_bn{background:#3617ce;text-align: center;color:#fff;font-size:1.3rem;padding:20px 0;}
+
+.cont_list{margin:50px 0;}
+.cont_box ul{display:flex;flex-wrap: wrap;}
+.cont_box ul li{flex:1;margin:1%;border-radius:20px;text-align:center;min-height:330px}
+.cont_box ul li a{width:100%;height:100%;display:flex;flex-direction:column;align-items: center;justify-content: center;
+	font-size:1.125rem;color:#555}
+.cont_box ul li strong{display:block;font-size:1.25rem;font-weight:400;margin:10px 0;color:#333;}
+
 @media screen and (max-width:1200px) {
 	.guide_box{flex-wrap: wrap;padding:35px}
 	.guide_box ul{margin-top:1rem;gap:40px;width:100%;flex-wrap: wrap;}
@@ -90,6 +118,8 @@ background-color: #fff;box-shadow: 0 6px 9px rgba(0, 0, 0, 0.16);position:relati
 	.guide_box ul li a img{width:100px;}
 	.favorites_box{flex-wrap: wrap;justify-content: flex-start;}
 	.favorites_box ul{margin-left:0;margin-top:1rem;}
+	.cont_box ul li{flex:0 0 48%;min-height:220px}
+	.cont_box ul li img{width:80px}
 }
 
 @media screen and  (max-width:520px) {
