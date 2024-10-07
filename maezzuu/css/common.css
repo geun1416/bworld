@@ -1044,7 +1044,10 @@ main {
     padding: 35px 74px;
     border-radius: 16px;
 }
-
+.item_box .item_title {
+    font-size: 32px;
+    line-height: 40px;
+}
 .item_box_right {
     display: flex;
     justify-content: space-between;

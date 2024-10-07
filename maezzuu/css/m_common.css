@@ -187,10 +187,6 @@
         flex: 0 0 calc(50% - 30px); /* 두 개씩 보이도록 설정, 간격 조정 */
         margin: 5px; /* 여백 설정 */
     }
-    .item_flex li a img {
-        width: 100px;
-        height: auto;
-    }
     /*  */
     /* HOT & NEW */
     .hotnew .swiper {
