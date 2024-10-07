@@ -2,11 +2,12 @@
 
 /* 1280px */
 @media screen and (max-width: 1280px) {
+    .gnb {
+        display: none;
+    }
     .item_box {
         flex-direction: column;
         align-items: flex-start;
-        padding: 25px 50px;
-        height: auto;
     }
 }
 /* 768px */
@@ -198,10 +199,6 @@
     }
     /*  */
     /* 맞춤패키지 */
-    .pkg li a img {
-        width: 300px;
-        height: auto;
-    }
     .pkg .item_title {
         font-size: 24px;
     }

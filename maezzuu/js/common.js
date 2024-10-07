@@ -11,7 +11,7 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 var swiper = new Swiper(".suggestSwiper", {
-  slidesPerView: 3, // 기본값: PC에서 3개
+  slidesPerView: 3,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -23,11 +23,10 @@ var swiper = new Swiper(".suggestSwiper", {
   },
   breakpoints: {
     1280: {
-      slidesPerView: 2, // 모바일에서 2개
+      slidesPerView: 2,
       spaceBetween: 10,
     },
-    // 모바일 설정
-    900: {
+    768: {
       slidesPerView: 1, // 모바일에서 1개
       spaceBetween: 10,
     },
