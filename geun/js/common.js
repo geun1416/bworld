@@ -21,7 +21,7 @@
       prevEl: ".products-prev",
     },
     breakpoints: {
-      1024: {
+      880: {
         slidesPerView: 1, 
         spaceBetween: 14,
       },
