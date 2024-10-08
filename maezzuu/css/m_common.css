@@ -5,212 +5,194 @@
     .gnb {
         display: none;
     }
+
+    .slide_title {
+        font-size: 36px;
+    }
+
+    .mySwiper .swiper-button-next {
+        right: 5%;
+    }
+
+    .mySwiper .swiper-button-prev {
+        left: 5%;
+    }
+
     .item_box {
         flex-direction: column;
         align-items: flex-start;
+        gap: 20px;
     }
+
+    .item_box .item_title {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
     .favorites_box {
         flex-direction: column;
     }
+
     .favorites_box .main_title {
         margin-bottom: 20px;
     }
+
     .favorites li {
         flex: 1 1 100%;
     }
-}
-/* 768px */
-@media screen and (max-width: 768px) {
-    /* header */
-    
-    .gnb_list {
-        width: 100%;
-        display: none;
-    }
-    .company {
-        display: none;
-    }
-    .util_nav .login,
-    .util_nav .menu {
-        display: none;
-    }
-    .search_title {
-        display: block;
-        position: relative;
+
+    .self_flex {
         text-align: center;
-        font-size: 28px;
-        margin-bottom: 30px;
-    }
-    .search_title::before {
-        position: absolute;
-        content: '';
-        width: 15px;
-        height: 15px;
-        top: 5px;
-        left: 0;
-        background:url(../img/arrow_down.png)
-    }
-    .search > a > img {
-        width: 50px;
-        height: 50px;
-    }
-    .search_box {
-        height: 100vh;
-        overflow: scroll;
-    }
-    .keyword_form input[type="search"] {
-        height: 100px;
-        padding: 10px 30px;
-        background-color: #F2F2F2;
-        border-radius: 50px;
-        border: none;
-        font-size:28px;
-    }
-    .search_btn {
-        width: 65px;
-        height: 70px;
-        top: 10px;
-        right: 30px;
-    }
-    .keyword_flex > .suggest_key {
-        display: none;
-    }
-    .keyword_flex .keyword {
-        display: none;
-    }
-    .keyword_flex {
+        align-items: center;
         flex-direction: column;
     }
-    .best_keyword {
-        margin-top: 40px;
+
+    .self_list {
+        margin: 20px 0;
+    }
+
+    .footer_list {
         width: 100%;
-        padding: 20px;
+    }
+
+    .footer_flex {
         flex-direction: column;
-        border: 1px solid #ddd;
-        transition: all 0.2s ease-in-out;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
     }
-    .best_keyword li {
-        display: block;
+
+    .skbroadband {
+        padding-top: 20px;
     }
-    .best_keyword:hover {
-        border:1px solid #ddd;
+
+    .footer_copyright {
+        text-align: center;
     }
-    .search_closebtn {
-        position: absolute;
-        top: 300px;
-        right: 20px;
-        border: none;
-        background-color: transparent;
-        cursor: pointer;
-        font-size: 1rem;
+
+    #footer {
+        padding-bottom: 50px;
+    }
+}
+
+/* 1024px */
+@media screen and (max-width: 1024px) {
+    .item a img {
+        width: 100px;
+    }
+
+    .favorites .main_text {
+        font-size: 16px;
+    }
+
+    .suggest_title {
+        font-size: 22px;
+    }
+
+    .item_intro {
+        font-size: 16px
+    }
+
+    .calc {
+        line-height: 80px;
+    }
+
+    .calc span {
+        font-size: 20px;
+    }
+
+    .calc_btn {
+        font-size: 16px;
+    }
+}
+
+/* 900px */
+@media screen and (max-width: 900px) {
+    .slide_box {
+        padding: 50px 65px;
+    }
+
+    .slide_title {
+        font-size: 34px;
+    }
+
+    .slide_btn {
+        left: 65px;
+        padding: 10px 30px;
+        font-size: 14px;
         font-weight: 500;
     }
-    /*  */
-    /* 메인스와이퍼 */
-    .slide_box {
-        padding: 50px 0;
-    }
-    .slide_btn {
-        display: none;
-    }
-    .bg01 {
-        background: url('../img/mb01.png') no-repeat center/cover;
-    }
-    
-    .bg02 {
-        background: url('../img/mb02.png')no-repeat center/cover;
-    }
-    
-    .bg03 {
-        background: url('../img/mb03.png')no-repeat center/cover;   
-    }
-    .swiper-button-next,
-    .swiper-button-prev {
-    display: none !important;
-    }
-    /*  */
-    /* 이런상품들을 찾고계신가요? */
-    
-    .item_title {
-        font-size: 28px;
-        margin-bottom: 5px;
-    }
-    .item_box_right {
-        gap: 20px;
-    }
-    .item_box_right img {
-        width: 100px;
-        height: 100px;
-    }
-    /*  */
-    /* 즐겨찾는메뉴 */
-    /*  */
 
-    /* 추천상품 */
-    .suggest {
-        width: 100%;
+    .item a img {
+        width: 80px;
     }
-    /*  */
-    /* 인터넷/B tv 요금계산기 */
+
+    .favorites {
+        flex-wrap: wrap;
+    }
+
     .calc {
-        height: auto;
         line-height: 70px;
     }
+
     .calc span {
-        font-size: 18px;
+        font-size: 16px;
     }
+
     .calc_btn {
-        margin-left: 0px;
-        margin-bottom: 20px;
+        font-size: 14px;
     }
-    /*  */
-    /* 혜택 */
+
     .item_flex {
         flex-wrap: wrap;
     }
+
     .item_flex li {
-        flex: 0 0 calc(50% - 30px); /* 두 개씩 보이도록 설정, 간격 조정 */
-        margin: 5px; /* 여백 설정 */
+        flex: 0 0 calc(50% - 30px);
+        margin: 5px;
     }
-    /*  */
-    /* HOT & NEW */
-    .hotnew .swiper {
-    overflow: hidden;
-    }
-    /*  */
-    /* 맞춤패키지 */
-    .pkg .item_title {
-        font-size: 24px;
-    }
-    /*  */
-    /* 셀프문제해결 */
-    .self_flex {
-        display: block;
-        text-align: center;
-    }
-    .item_title {
-        font-size: 24px;
-    }
-    .self_flex .item_intro {
-        display: none;
-        margin: 0;
-    }
-    .self_list li a {
-        align-items: center;
-    }
-    /*  */
-    /* 공지사항 */
-    .notice_list {
-        width: 420px;
-    }
-    /*  */
-    /* footer */
-    #footer {
-        display: none;
+
+    .self_list li {
+        flex: 1 1 100%;
     }
 }
 
-/* 430px */
-@media screen and (max-width: 430px) {
+/* 768px */
+@media screen and (max-width:768px) {
+    .company {
+        display: none;
+    }
 
+    .login {
+        display: none;
+    }
+
+    .slide_title {
+        font-size: 26px;
+    }
+
+    .item a img {
+        width: 60px;
+    }
+
+    .item_box .item_title {
+        font-size: 26px;
+    }
+
+    .main_title {
+        font-size: 26px;
+        font-weight: 500;
+    }
+
+}
+
+/* 600px */
+@media screen and (max-width:600px) {
+    .item_title {
+        margin-top: 0;
+        font-size: 16px;
+    }
+
+    .item_intro {
+        font-size: 14px;
+    }
 }
