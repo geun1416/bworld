@@ -26,8 +26,8 @@ var swiper = new Swiper(".suggestSwiper", {
       slidesPerView: 2,
       spaceBetween: 10,
     },
-    768: {
-      slidesPerView: 1, // 모바일에서 1개
+    600: {
+      slidesPerView: 1,
       spaceBetween: 10,
     },
   },

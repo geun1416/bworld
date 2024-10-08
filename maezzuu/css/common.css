@@ -1352,7 +1352,9 @@ main {
 .self_video {
     max-width: 100%;
 }
-
+.self_video a img{
+    width: 100%;
+}
 .self_list {
     display: flex;
     flex-wrap: wrap;
