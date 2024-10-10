@@ -169,8 +169,10 @@ header {
 }
 
 .footer_link {
+    width: 50%;
     display: flex;
     position: relative;
+    height: auto;
 }
 
 .lang {
@@ -1425,7 +1427,7 @@ main {
     position: relative;
     float: right;
     margin-right: 20px;
-    line-height: 30px;
+    line-height:30px;
 }
 
 .notice_view::after {
