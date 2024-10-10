@@ -703,6 +703,7 @@ header {
 }
 
 .keyword {
+    flex-wrap: wrap;
     width: 55%;
     padding-top: 18px;
 }
@@ -724,7 +725,6 @@ header {
     padding: 20px;
     flex-direction: column;
     border: 1px solid white;
-    transition: all 0.2s ease-in-out;
 }
 
 .best_keyword:hover {
@@ -737,6 +737,9 @@ header {
     display: none;
     justify-content: flex-start;
 }
+.best_keyword li a:hover{
+    color: #3617CE;
+}
 
 .best_keyword li.keywordon:first-child {
     display: flex;
@@ -747,6 +750,7 @@ header {
 }
 
 .best_keyword li a {
+    display: inline-block;
     width: 100%;
     font-size: 1.125rem;
     display: flex;

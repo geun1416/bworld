@@ -72,6 +72,28 @@
     #footer {
         padding-bottom: 50px;
     }
+    .search_box {
+        height: 100vh;
+    }
+    .keyword_flex {
+        flex-direction: column;
+    }
+    .keyword {
+        width: 100%;
+    }
+    .best_keyword li {
+        display: block;
+    }
+    .best_keyword:hover {
+        border:1px solid white;
+    }
+    .keyword li a {
+        font-size: 14px;
+    }
+    .search_closebtn {
+        top: 20px;
+    }
+
 }
 
 /* 1024px */
@@ -156,6 +178,15 @@
     .self_list li {
         flex: 1 1 100%;
     }
+    .menu_form {
+        flex-direction: column;
+    }
+    .title {
+        padding: 0;
+    }
+    .menu_title a {
+        margin: 25px 0;
+    }
 }
 
 /* 768px */
@@ -233,6 +264,10 @@
     }
     .calc {
         line-height: 65px;
+    }
+    .menu_searchform {
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
@@ -316,6 +351,32 @@
     .calc span {
         font-size: 14px;
     }
+    .keyword_flex h2 {
+        font-size: 20px;
+    }
+    .keyword {
+        gap: 5px;
+    }
+    .keyword_form input[type="search"] {
+        height: 50px;
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .search_btn {
+        width: 35px;
+        height: 50px;
+    }
+    .best_keyword {
+        width: 100%;
+    }
+    .menu_content>.dep1_list>a {
+        font-size: 16px;
+        padding: 0;
+    }
+    .dep2_list {
+        margin: 10px 0;
+    }
+
 }
 
 
@@ -342,5 +403,11 @@
     .self_list li a img {
         width: 70px;
         height: 70px;
+    }
+    .menu_content .dep1_list{
+        width: 130px;
+    }
+    .dep2_list {
+        width: 130px;
     }
 }
