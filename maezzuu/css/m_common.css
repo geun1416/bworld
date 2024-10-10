@@ -139,6 +139,8 @@
     }
 
     .calc_btn {
+        width: 200px;
+        margin: 0 0 10px 20px;
         font-size: 14px;
     }
 
@@ -147,8 +149,7 @@
     }
 
     .item_flex li {
-        flex: 0 0 calc(50% - 30px);
-        margin: 5px;
+        flex: 0 0 calc(50% - 15px);
     }
 
     .self_list li {
@@ -203,25 +204,31 @@
         line-height: 30px;
         height: 50px;
     }
-
+    .suggest_view a {
+        height: 40px;
+        line-height: 40px;
+    }
     .suggest img {
         margin-top: 30px;
     }
 
     .price span {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .price strong {
-        font-size: 20px;
+        font-size: 18px;
     }
     .suggest_btn a {
         height:40px;
         line-height: 40px;
-        font-size: 16px;
+        font-size: 14px;
     }
     .suggest_view a {
-        font-size: 16px;
+        font-size: 14px;
+    }
+    .calc {
+        line-height: 65px;
     }
 }
 
@@ -254,16 +261,30 @@
     }
     .item_title {
         margin-top: 0;
-        font-size: 16px;
+        font-size: 14px;
+        line-height: 20px;
     }
     .item_intro {
-        font-size: 14px;
+        font-size: 12px;
     }
     .main_title {
         font-size: 18px;
     }
     .favorites .main_text {
         font-size: 14px;
+    }
+    .advantage li a img {
+        width: 60px;
+        height: auto;
+    }
+    .item_flex {
+        gap: 15px;
+    }
+    .item_flex li {
+        padding: 20px;
+    }
+    .item_flex li a {
+        padding: 0;
     }
     .title {
         font-size:18px;
@@ -279,5 +300,32 @@
     }
     .self_text .item_intro {
         font-size: 14px;
+    }
+    .calc {
+        line-height: 40px;
+    }
+    .calc_btn {
+        margin: 0 0 10px 20px;
+        font-size: 14px;
+        padding: 5px 10px;
+        
+    }
+    .calc span {
+        font-size: 14px;
+    }
+}
+
+
+/* 430px */
+@media screen and (max-width:430px) {
+    .advantage li a img {
+        width: 40px;
+        height: auto;
+    }
+    .item_flex {
+        gap: 10px;
+    }
+    .item_flex li {
+        padding: 10px 20px;
     }
 }
