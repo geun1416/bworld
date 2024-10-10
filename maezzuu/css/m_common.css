@@ -159,6 +159,9 @@
 
 /* 768px */
 @media screen and (max-width:768px) {
+    .inner {
+        padding: 0 25px;
+    }
     .company {
         display: none;
     }
@@ -280,8 +283,10 @@
     .item_flex {
         gap: 15px;
     }
+    
     .item_flex li {
         padding: 20px;
+        flex: 0 0 calc(50% - 10px);
     }
     .item_flex li a {
         padding: 0;
@@ -324,6 +329,7 @@
     }
     .item_flex li {
         padding: 10px 20px;
+        flex: 0 0 calc(50% - 8px);
     }
     .self_text .item_intro {
         line-height: 20px;
