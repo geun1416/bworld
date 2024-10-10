@@ -289,9 +289,6 @@
     .title {
         font-size:18px;
     }
-    .self_text {
-        margin-left: 0px;
-    }
     .self_list li {
         padding: 5px;
     }
@@ -327,5 +324,12 @@
     }
     .item_flex li {
         padding: 10px 20px;
+    }
+    .self_text .item_intro {
+        line-height: 20px;
+    }
+    .self_list li a img {
+        width: 70px;
+        height: 70px;
     }
 }
